@@ -29,8 +29,19 @@
   Call your class Employee and receive all the data in the constructor in the order listed above.
 */
 
-//Code Here
+class Employee {
+  constructor(first_name,last_name,email,age){
+    this.first_name = first_name,
+    this.last_name = last_name,
+    this.email = email,
+    this.age = age
 
+    this.makeWidget = function(){
+      return first_name + ' ' + last_name + ' Widget';
+    }
+  }
+}
+console.log(Employee(devan,boman,devanboman,27))
 
 
 ////////// PROBLEM 2 //////////
@@ -48,10 +59,26 @@
 
   Call your new class Manager
 */
+class Manager {
+  constructor(first_name,last_name,email,age){
+    this.first_name = first_name,
+    this.last_name = last_name,
+    this.email = email,
+    this.age = age
 
-//Code Here
-
-
+    this.makeWidget = function(){
+      return first_name + ' ' + last_name + ' Widget';
+    }
+    this.reports = [];
+    this.hire = function(employee){
+        this.reports = reports.push(employee);
+    }
+    this.fire = function(index){
+      this.splice(index,1);
+    }
+  }
+}
+console.log(Manager())
 
 ////////// PROBLEM 3 //////////
 
@@ -103,5 +130,8 @@
 */
 
 //Code Here
+
+
+
 
 
